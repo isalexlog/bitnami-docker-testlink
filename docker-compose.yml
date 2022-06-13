@@ -21,6 +21,7 @@ services:
       - TESTLINK_DATABASE_NAME=bitnami_testlink
       # ALLOW_EMPTY_PASSWORD is recommended only for development.
       - ALLOW_EMPTY_PASSWORD=yes
+      - TESTLINK_LANGUAGE=ru_RU
     volumes:
       - 'testlink_data:/bitnami/testlink'
     depends_on:
